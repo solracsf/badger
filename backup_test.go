@@ -446,7 +446,7 @@ func TestBackupLoadIncremental(t *testing.T) {
 				if err := txn.SetEntry(entry); err != nil {
 					return err
 				}
-				updates[i] = BitDiscardEarlierVersions
+				updates[i] = bitDiscardEarlierVersions
 			}
 			return nil
 		})

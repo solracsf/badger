@@ -136,8 +136,6 @@ func TestValueBasic(t *testing.T) {
 }
 
 func TestValueGCManaged(t *testing.T) {
-	t.Skipf("Value Log is not used in managed mode.")
-
 	dir, err := ioutil.TempDir("", "badger-test")
 	require.NoError(t, err)
 	defer removeDir(dir)
